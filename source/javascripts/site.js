@@ -1,4 +1,3 @@
-// This is where it all goes :)
 window.onload = function () {
     var num = Math.floor(Math.random() * 3 + 1);
     if (num === 1) {
@@ -31,3 +30,11 @@ window.onload = function () {
         }
     })
 };
+function openBurger() {
+    var x = document.getElementById("mobile-nav");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

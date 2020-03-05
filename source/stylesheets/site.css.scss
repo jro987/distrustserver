@@ -10,6 +10,7 @@ body {
   width:100%;
   z-index:2;
   display:flex;
+  flex-wrap:wrap;
   align-items:center;
   justify-content:space-between;
   position:fixed;
@@ -22,14 +23,14 @@ body {
     margin-left:30px;
   }
   .right {
-    margin-right:30px;
+    margin-right:15px;
     display:flex;
     align-items:center;
     justify-content:end;
 
     a {
       color:#f6eae0;
-      padding-left:30px;
+      padding:0 15px;
       font-size:26px;
       text-decoration:none;
     }
@@ -45,6 +46,15 @@ body {
       margin-left:10px;
     }
   }
+
+  .right-mobile {
+    display:none;
+  }
+
+}
+
+.mobile-nav {
+  display:none;
 }
 
 .space-fix {
@@ -111,7 +121,7 @@ body {
   text-align:center;
 
   .content {
-    padding:80px 50px;
+    padding:80px 20px;
     color:#1e2020;
 
     h2 {
@@ -180,17 +190,18 @@ body {
 .footer-cont {
   background-color:#1e2020;
   width:100%;
-  height:140px;
   display:flex;
+  flex-wrap: wrap;
   align-items:center;
   text-align:center;
   justify-content: center;
+  padding:60px 0;
 
   a {
     color:#f6eae0;
     font-size:18px;
-    padding:0 25px;
     text-decoration:none;
+    padding:0 40px;
   }
 
   a:hover {
@@ -202,6 +213,94 @@ body {
     font-size:18px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin-left:8px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .site-logo {
+    height:40px!important;
+    display:block;
+  }
+
+  .space-fix {
+    height:70px;
+  }
+
+  .footer-cont {
+    padding:10px 0;
+
+    a {
+      display:block;
+      padding:30px 0;
+    }
+
+  }
+
+  .content {
+    padding:50px 15px!important;
+    color:#1e2020;
+  }
+
+  .nav-cont {
+    padding:5px 0;
+
+    .left {
+      margin:10px 20px;
+    }
+
+    .right {
+      margin:10px auto;
+      display:none;
+
+      span {
+        font-size:22px;
+      }
+
+      a {
+        padding:10px 0px;
+        font-size:22px;
+        display:flex;
+        flex-wrap:wrap;
+      }
+
+    }
+
+    .right-mobile {
+      display:block;
+
+      a {
+        color:#f6eae0;
+        padding:0 20px;
+        font-size:26px;
+        text-decoration:none;
+      }
+
+    }
+  
+  }
+
+  .mobile-nav {
+    background-color:#1e2020;
+    position:absolute;
+    top:70px;
+    right:0;
+
+    a {
+      display:block;
+      color:#f6eae0;
+      padding:15px 40px;
+      font-size:26px;
+      text-decoration:none;
+    }
+
+    span {
+      font-size:26px;
+      font-family: "Tomorrow", Arial, Helvetica, sans-serif;
+      margin-left:10px;
+    }
+
   }
 
 }
