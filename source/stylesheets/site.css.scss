@@ -54,7 +54,26 @@ body {
 }
 
 .mobile-nav {
+  background-color:#1e2020;
+  position:fixed;
+  top:70px;
+  right:0;
   display:none;
+
+  a {
+    display:block;
+    color:#f6eae0;
+    padding:15px 40px;
+    font-size:26px;
+    text-decoration:none;
+  }
+
+  span {
+    font-size:26px;
+    font-family: "Tomorrow", Arial, Helvetica, sans-serif;
+    margin-left:10px;
+  }
+
 }
 
 .space-fix {
@@ -279,28 +298,6 @@ body {
 
     }
   
-  }
-
-  .mobile-nav {
-    background-color:#1e2020;
-    position:absolute;
-    top:70px;
-    right:0;
-
-    a {
-      display:block;
-      color:#f6eae0;
-      padding:15px 40px;
-      font-size:26px;
-      text-decoration:none;
-    }
-
-    span {
-      font-size:26px;
-      font-family: "Tomorrow", Arial, Helvetica, sans-serif;
-      margin-left:10px;
-    }
-
   }
 
 }
