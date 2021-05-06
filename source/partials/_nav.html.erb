@@ -4,7 +4,8 @@
     </div>
     <div class="right">
         <a href="/rules"><i class="fas fa-clipboard-list"></i><span>RULES</span></a>
-        <a><i class="fab fa-steam-symbol"></i><span>LOGIN</span></a>
+        <a href="javascript:void(0);" onclick="steamLogin()"><i class="fab fa-steam-symbol"></i><span>LOGIN</span></a>
+        <a href="/vip"><i class="fas fa-crown"></i><span>VIP</span></a>
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=distrustservers@gmail.com&lc=US&item_name=
         Donation+to+keep+Distrust+running&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"
             target="_blank"><i class="fas fa-donate"></i><span>DONATE</span></a>
@@ -17,9 +18,20 @@
 </div>
 <div id="mobile-nav" class="mobile-nav">
     <a href="/rules"><i class="fas fa-clipboard-list"></i><span>RULES</span></a>
-    <a><i class="fab fa-steam-symbol"></i><span>LOGIN</span></a>
+    <a href="javascript:void(0);" onclick="steamLogin()"><i class="fab fa-steam-symbol"></i><span>LOGIN</span></a>
+    <a href="/vip"><i class="fas fa-crown"></i><span>VIP</span></a>
     <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=distrustservers@gmail.com&lc=US&item_name=
     Donation+to+keep+Distrust+running&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"
         target="_blank"><i class="fas fa-donate"></i><span>DONATE</span></a>
 </div>
 <div class="space-fix"></div>
+<div style="display:none">
+    <form id="steam-login" action="https://steamcommunity.com/openid/login" method="post">
+        <input type="hidden" name="openid.identity" value="http://specs.openid.net/auth/2.0/identifier_select" />
+        <input type="hidden" name="openid.claimed_id" value="http://specs.openid.net/auth/2.0/identifier_select" />
+        <input type="hidden" name="openid.ns" value="http://specs.openid.net/auth/2.0" />
+        <input type="hidden" name="openid.mode" value="checkid_setup" />
+        <input type="hidden" name="openid.realm" value="http:\\www.distrustserver.com" />
+        <input type="hidden" name="openid.return_to" value="http:\\www.distrustserver.com" />
+    </form>
+</div>

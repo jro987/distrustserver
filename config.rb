@@ -7,6 +7,8 @@ end
 
 activate :directory_indexes
 
+activate :livereload
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
